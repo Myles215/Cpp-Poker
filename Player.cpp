@@ -147,7 +147,7 @@ int Player::getPoints(int cardCount, int table[]) {
     //delete straight check array as it was declared on heap
     delete [] straightCheck;
 
-   std::cout<<suitMatch<<" "<<faceMatch1<<" "<<faceMatch2<<std::endl;
+   //std::cout<<suitMatch<<" "<<faceMatch1<<" "<<faceMatch2<<std::endl;
 
     //calculate the highest face in players hand
    high = handCards[1];
