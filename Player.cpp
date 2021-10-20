@@ -229,9 +229,13 @@ void Player::loser() {
 }
 
 void Player::newRound() {
-    roundStatus = true;
-    allIn = false;
-    bet = 0;
+    if (gameStatus==true) {
+        roundStatus = true;
+        allIn = false;
+        bet = 0;
+    } else {
+        allIn = false;
+    }
 }
 
 Player::~Player() {
