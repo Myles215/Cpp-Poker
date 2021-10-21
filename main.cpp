@@ -173,6 +173,11 @@ int main() {
         playerBet = -1;
         counter = -1;
 
+        //reset bet to 0
+        for (int i = 0;i<numPlayers;i++) {
+            players[i]->resetBet();
+        }
+
         while (playerBet<currentBet && playersInRound>1) {
             counter++;
             /*define whos turn it is in terms of 

@@ -7,10 +7,14 @@ Player::Player() {
 };
 
 //function to add the players funds
+//function to add the players funds
 void Player::addFunds(int money) {
+    funds = funds + money;
+
     if (money>=0) {
-        funds = funds + money;
         std::cout<<"$"<<money<<" has been added to account"<<std::endl;
+    } else {
+        std::cout<<"$"<<-money<<" has been taken from account"<<std::endl;
     }
 
     if (funds<=0) {
@@ -236,6 +240,10 @@ void Player::newRound() {
     } else {
         allIn = false;
     }
+}
+
+void Player::resetBet() {
+    bet = 0;
 }
 
 Player::~Player() {

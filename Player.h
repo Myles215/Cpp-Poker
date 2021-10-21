@@ -18,6 +18,7 @@ public:
     virtual int makeMove(int currentBet) = 0;
     void addFunds(int money);
     int checkFunds();
+    void resetBet();
     void getHand(int counter, int cards[]);
     virtual void checkHand(std::string suit[],std::string face[]) = 0;
     int getPoints(int cardCount, int table[]);
